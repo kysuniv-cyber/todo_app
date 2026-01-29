@@ -5,8 +5,7 @@
 ## 1. Clone으로 시작하기(원격지에 있는 파일부터 시작해서 로컬 레포지토리에 프로젝트 시작하면 OK)
 ## 2. 그런데 이미 로컬 레포지토리에 이미 파일이 존재하면 Sourcetree로 Pull부터 시작해도 브랜치가 나눠어 있다.
       (2번과 같은 경우에는 git bash로 git cli환경에서 명령어로 처리해야 한다.)
-
-'''badh
+'''
 # 로컬 레포지토리에서
 git init
 
@@ -14,7 +13,10 @@ git remote add origin <원격지 주소>
 
 git pull origin main
 
+# git status로 staging area에 add되었는지와 commit 되었는지 확인해 보기
 git add -A
 
-git push origin main
+git commit -m '<커밋 메세지>'
+
+git push origin main 
 '''
